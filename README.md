@@ -9,7 +9,7 @@
 ---
 
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/trietcpp)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/trietcpp](https://www.linkedin.com/in/trietcpp?utm_source=share_via&utm_content=profile&utm_medium=member_ios))
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/trietcpp](https://www.linkedin.com/in/trietcpp?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:huynhminhtriet.math@gmail.com)
 
 </div>
