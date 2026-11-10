@@ -16,7 +16,7 @@
 
 <br />
 
-## 🔭 About Me
+## 🔭  About Me
 
 - 🎓 **Education:** Mathematics & Computer Science Student at **HCMUS** (VNUHCM - University of Science).
 - 💻 **Engine & Systems:** Core Engineer & OJ Developer at **MathAlgo** (developing automated online judge platforms).
@@ -25,7 +25,7 @@
 
 ---
 
-## 🛠 Tech Stack & Tools
+## 🛠  Tech Stack & Tools
 
 ### **Languages & Core**
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -38,7 +38,7 @@
 
 ---
 
-## Sample Competitive Programming Code
+## 🖥️  Sample Competitive Programming Code
 
 ```cpp
 #include <bits/stdc++.h>
