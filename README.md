@@ -18,7 +18,7 @@
 
 ## 🔭 About Me
 
-- 🎓 **Education:** Mathematics & Computer Science Student at **HCMUS** (Faculty of Mathematics & Computer Science).
+- 🎓 **Education:** Mathematics & Computer Science Student at **HCMUS** (VNUHCM - University of Science).
 - 💻 **Engine & Systems:** Core Engineer & OJ Developer at **MathAlgo** (developing automated online judge platforms).
 - 🏆 **Competitive Programming:** Active CP solver focusing on C++, fast I/O optimization, rolling hashing, and algorithmic structures.
 - 🎮 **Side Interests:** Exploring 2D game architecture with **Raylib (C++)**, practicing martial arts, and solving logic puzzles.
