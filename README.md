@@ -2,7 +2,7 @@
 
 # INTRODUCTION
     
-### **Undergraduate Student in Math & Computer Science**
+### **Undergraduate in Math & CS**
 
 *Building efficient backend systems, competitive programming algorithms, and learning game dev.*
 
@@ -38,7 +38,7 @@
 
 ---
 
-## 🎯 Current Focus & Goals
+## 💻 SAMPLE CP CODE
 
 ```cpp
 #include <bits/stdc++.h>
@@ -125,9 +125,5 @@ signed main(void) {
         freopen(taskname".inp", "r", stdin);
         freopen(taskname".out", "w", stdout);
     }
-    
-    cout << "1. Master ICPC / Olympic Informatics algorithms\n";
-    cout << "2. Scale MathAlgo Online Judge infrastructure\n";
-    cout << "3. Build custom 2D C++ game engines\n";
     return 0;
 }
