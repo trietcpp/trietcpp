@@ -1,6 +1,6 @@
 <div align="center">
 
-# INTRODUCTION
+## Introduction
     
 ### **Undergraduate in Math & CS**
 
@@ -38,7 +38,7 @@
 
 ---
 
-## 💻 SAMPLE CP CODE
+## Sample Competitive Programming Code
 
 ```cpp
 #include <bits/stdc++.h>
