@@ -38,7 +38,7 @@
 
 ---
 
-## 🖥️  Sample Competitive Programming Code
+## 🖥️  Sample CP Source
 
 ```cpp
 #include <bits/stdc++.h>
