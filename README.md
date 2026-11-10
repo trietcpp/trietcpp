@@ -1,7 +1,4 @@
 <div align="center">
-
-# Welcome 👋
-
 ### **Undergraduate Student in Math & Computer Science**
 
 *Building efficient backend systems, competitive programming algorithms, and learning game dev.*
@@ -41,10 +38,8 @@
 ## ⚡ GitHub Stats
 
 <div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=trietcpp&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=trietcpp&layout=compact&theme=tokyonight&hide=html,css" />
-
+  <img src="https://github-readme-stats.vercel.app/api?username=trietcpp&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trietcpp&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" />
 </div>
 
 ---
