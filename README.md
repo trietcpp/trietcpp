@@ -41,11 +41,93 @@
 ## 🎯 Current Focus & Goals
 
 ```cpp
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+/*
+⣿⣿⣿⣿⣿⠃⢿⣷⠆⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣯⡀⠀⠳⠤⠒⢦⡀⢠⣠⡿⠀⢸⣿⣿⡟⢳⡄⠈⠉⠹⣷⣄⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⡏⠀⠈⢻⣦⣀⡀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣷⣄⡀⠀⠀⣾⠳⠞⠀⣤⣴⣿⣿⡟⠀⢀⣹⡄⠀⠀⠘⣿⣦⡀⠀⠀⠀
+⣿⣿⣿⣿⡁⠀⠀⠀⠉⢉⣙⡻⢶⣶⠆⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣾⣿⣷⣄⣼⣿⣿⣿⠏⢠⣏⠻⣯⡙⠦⣀⠀⠈⢿⣿⣦⣄⠀
+⣿⣿⣿⣿⣿⣦⡀⠀⠀⣿⡿⢷⢰⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⠀⠸⣌⠳⣌⠙⠲⣬⠙⢦⠘⣿⣿⣿⣷
+⣿⣿⣿⣿⣿⣿⣿⣦⡠⠿⣿⣷⣼⣿⠁⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⡦⣄⡘⢆⠀⠁⢀⠘⢧⠘⣇⠘⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠈⠛⠿⣄⣀⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢧⡀⠀⠀⠙⢦⡈⠙⢧⡀⠀⠇⠈⠁⠙⢧⣭⠻⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠈⢳⠀⠀⠀⠀⠙⢦⠀⠁⠀⠀⠀⠀⠀⠀⢻⡀⠈
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⢧⠀⠀⠀⠀⠘⣇⠀⠀⠀⠀⠀⠀⣀⣬⣷⣾
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⣏⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀⠘⡆⠀⠀⢀⣤⣾⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢻⡉⠀⠀⠈⢣⡀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠘⣦⣶⣿⣿⣿⣿⣿⣿⣿
+⠉⠛⡿⠻⡿⠿⠿⠿⠿⠿⣿⠛⣿⠛⠉⠉⠁⠀⠀⠀⠀⢿⡦⣀⠀⠀⠑⢄⠀⠀⠀⣀⣀⠀⠀⢹⡄⠀⠀⠀⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⡇⠀⡇⠀⠀⠀⠀⠀⡏⠀⣸⢣⠀⠀⠀⠀⠀⠀⠀⠀⢳⣬⣷⣦⣤⡴⠷⢞⠋⠉⠀⠀⠀⠀⢧⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⢰⠀⣷⠀⠀⠀⢀⣀⣇⣤⡿⠶⠳⡄⠀⠀⠀⠀⠀⠀⠈⠙⢄⠀⠈⠑⠢⢄⡙⠦⣄⠀⠀⠀⠸⡆⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣀⣀⣘⡆⢹⣇⠀⠀⠀⠀⣯⢠⡇⠀⠀⠘⢦⡀⠀⠀⠀⠀⠀⢦⣈⠳⣄⠀⠀⠀⠀⠉⠛⠛⠲⣄⣀⣷⢸⠃⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⡈⢿⣆⠀⠀⠀⢹⣼⠀⠀⠀⠀⠀⠙⠳⣄⡀⠀⠀⠀⠙⢿⣲⣷⣤⣶⡶⠾⠿⠿⢿⡛⠋⠹⣾⡀⠀⢿⣿⣿⣿⣿⣿⣿⣿⡿
+⣿⣿⣿⣿⡇⠈⢯⠂⠀⢀⡬⣧⠴⡶⠶⠶⣤⠄⠀⠀⠙⠒⠦⠤⠤⣤⣍⣻⣥⡇⡆⠀⡴⣤⠀⢷⡀⠀⡏⡇⠀⠘⣿⣿⣿⣿⡿⠟⠋⠀
+⣿⣿⣿⣿⣷⠀⠈⢳⡀⠀⢠⢸⡀⢷⠀⣠⢬⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⡁⣀⠷⠞⠀⣼⠇⠀⢀⡇⠀⠀⣼⣿⠋⠁⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡄⠀⠀⡟⢆⠈⠳⣷⡘⣧⡨⠟⠃⢺⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠓⠒⠒⠛⠉⠀⢀⡞⢀⣠⣾⣿⣿⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡇⠀⢸⠀⠀⠙⢦⣙⢇⠈⠛⠲⠒⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⣻⣞⠋⠀⢹⣿⡿⠀⠀⠀⠀⠀⣰
+⠿⠿⠿⠛⠙⡇⢠⡏⠀⠀⠀⠀⢿⣟⠳⣄⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⢠⡤⠦⠦⠶⢆⠀⠀⠀⣠⡞⢹⡇⠀⠀⠸⣿⡇⠀⠀⠀⠀⢠⠃
+⠀⠀⠀⠀⢸⣡⠋⠘⡄⠀⠀⠀⢸⡌⣳⣄⠀⠀⠀⠀⠀⠀⢘⠉⠉⠁⠀⠀⠀⠀⠀⠘⣇⣤⠞⠁⢠⠎⡇⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠚⠉⡆⠀⢹⡀⠀⠀⠀⣷⣿⣿⣗⢦⣤⣄⣀⣀⣸⣆⣤⣤⣤⣤⣤⠤⠶⠛⠛⠒⠦⡀⡎⠀⢸⠀⠀⠀⣿⣧⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢧⠀⠀⢳⠀⠀⠀⢻⣿⣿⣿⣆⠀⠀⠸⣿⣿⣿⣿⣿⣿⠀⠹⣆⠀⠀⠀⣀⠀⢹⠇⣀⢸⡄⠀⠀⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠀⢠⠾⡄⠀⠀⢸⣿⣿⣿⣿⣧⠀⠀⠹⣿⣿⣿⣿⣿⠀⠀⠘⠳⠀⠘⠿⠿⢿⠿⠟⠸⡇⠀⠀⢿⣿⣧⠀⠀⠀⠀⠀
+⡀⡀⠀⠀⠀⠀⠈⣦⠋⠀⣧⠀⠀⢸⣿⣿⣿⣿⣿⣆⠀⠀⢻⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⣾⡄⠀⠀⡇⠀⠀⢸⣿⣿⣷⣄⣀⣠⣴
+*/
+#define ll long long
+#define endl "\n"
+#define FOR(i, a, b) for(int i = (a), _b = (b); i <= _b; i++)
+#define REP(i, a, b) for(int i = (a), _b = (b); i >= _b; i--)
+#define fi first
+#define se second
+#define all(a) (a).begin(), (a).end()
+#define pb push_back
+#define pf push_front
+#define MOD 1000000007
+#define inf (int) 2e9
+#define INF (ll) 2e18
+typedef pair<int, int> pii;
+typedef pair<int, pii> piii;
+typedef pair<pii, pii> piv;
+typedef pair<ll, ll> pll;
+typedef map<int, int> mii;
+typedef vector<int> vi;
+typedef vector<pii> vii;
+typedef vector<mii> viii;
 
-int main() {
-    std::cout << "1. Master ICPC / Olympic Informatics algorithms\n";
-    std::cout << "2. Scale MathAlgo Online Judge infrastructure\n";
-    std::cout << "3. Build custom 2D C++ game engines\n";
+void __print(int x) {cerr << x;}
+void __print(long x) {cerr << x;}
+void __print(long long x) {cerr << x;}
+void __print(unsigned x) {cerr << x;}
+void __print(unsigned long x) {cerr << x;}
+void __print(unsigned long long x) {cerr << x;}
+void __print(float x) {cerr << x;}
+void __print(double x) {cerr << x;}
+void __print(long double x) {cerr << x;}
+void __print(char x) {cerr << '\'' << x << '\'';}
+void __print(const char *x) {cerr << '\"' << x << '\"';}
+void __print(const string &x) {cerr << '\"' << x << '\"';}
+void __print(bool x) {cerr << (x ? "true" : "false");}
+template<typename T, typename V>
+void __print(const pair<T, V> &x) {cerr << '{'; __print(x.first); cerr << ','; __print(x.second); cerr << '}';}
+template<typename T>
+void __print(const T &x) {int f = 0; cerr << '{'; for (auto &i: x) cerr << (f++ ? "," : ""), __print(i); cerr << "}";}
+void _print() {cerr << "]\n";}
+template <typename T, typename... V>
+void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v...);}
+#ifndef ONLINE_JUDGE
+#define debug(x...) cerr << "[" << #x << "] = ["; _print(x)
+#else
+#define debug(x...)
+#endif
+const int nmax = 5e6 + 5;
+
+signed main(void) {
+    cin.tie(nullptr); cout.tie(nullptr); ios_base::sync_with_stdio(false);
+    #define taskname "FURINA DE FONTAINE"
+    if(fopen(taskname".inp", "r") != NULL){
+        freopen(taskname".inp", "r", stdin);
+        freopen(taskname".out", "w", stdout);
+    }
+    
+    cout << "1. Master ICPC / Olympic Informatics algorithms\n";
+    cout << "2. Scale MathAlgo Online Judge infrastructure\n";
+    cout << "3. Build custom 2D C++ game engines\n";
     return 0;
 }
