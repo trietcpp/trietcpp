@@ -1,4 +1,7 @@
 <div align="center">
+
+# INTRODUCTION
+    
 ### **Undergraduate Student in Math & Computer Science**
 
 *Building efficient backend systems, competitive programming algorithms, and learning game dev.*
