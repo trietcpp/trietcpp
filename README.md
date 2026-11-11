@@ -1,6 +1,6 @@
 <div align="center">
 
-## Huynh Minh Triet - Introduction
+## HUYNH MINH TRIET
     
 ### **Undergraduate in Math & CS**
 
